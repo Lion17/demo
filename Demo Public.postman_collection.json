@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "f64f06a5-3121-4922-8706-2ad8d0cd9f4b",
+		"name": "Demo Public",
+		"description": "### Demo Public API\n\nЭта коллекция описывает **публичный контракт API** демонстрационного проекта.\n\nПравила:\n\n- В коллекции находятся **только стабильные и поддерживаемые endpoint’ы**.\n    \n- Все endpoint’ы из этой коллекции считаются доступными для внешних клиентов.\n    \n- Внутренние, технические или экспериментальные endpoint’ы **запрещено** добавлять в эту коллекцию.\n    \n\nНазначение коллекции:\n\n- контракт API для команды;\n    \n- источник для генерации OpenAPI;\n    \n- источник публичной документации.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5109240"
+	},
+	"item": [
+		{
+			"name": "GET /orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/orders",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"orders"
+					]
+				},
+				"description": "**Summary:** Returns list of orders  \n**Details:**\n\n- Returns an array of orders.\n    \n- Each order contains: `id` (integer), `status` (string)."
+			},
+			"response": []
+		},
+		{
+			"name": "POST /orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"productId\": 1,\n  \"quantity\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/orders",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"orders"
+					]
+				},
+				"description": "**Summary:** Create a new order\n\n**Request body:**\n\n- `productId` (integer, required) — product identifier\n    \n- `quantity` (integer, required) — number of items\n    \n- `comment` (string, optional) — optional comment for the order\n    \n\n**Response:**\n\n- `id` (integer) — order identifier\n    \n- `status` (string) — order status"
+			},
+			"response": []
+		}
+	]
+}

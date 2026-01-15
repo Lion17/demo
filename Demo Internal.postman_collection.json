@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "69e61a3f-7ae8-4b79-ad07-73f136eee438",
+		"name": "Demo Internal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5109240"
+	},
+	"item": [
+		{
+			"name": "GET /internal/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/internal/health",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"internal",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /internal/reset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/internal/reset",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"internal",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
