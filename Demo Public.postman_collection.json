@@ -48,7 +48,7 @@
 						"orders"
 					]
 				},
-				"description": "**Summary:** Create a new order\n\n**Request body:**\n\n- `productId` (integer, required) — product identifier\n    \n- `quantity` (integer, required) — number of items\n    \n- `comment` (string, optional) — optional comment for the order\n    \n\n**Response:**\n\n- `id` (integer) — order identifier\n    \n- `status` (string) — order status"
+				"description": "**Summary:** Create a new order\n\n**Request body:**\n\n- `productId` (integer, required) — product identifier\n    \n- `quantity` (integer, required) — number of items\n    \n- `comment` (string, optional) — optional comment for the order\n    \n\n**Response:**\n\n- `id` (integer) — order identifier\n    \n- `status` (string) — order status\n    \n\nПримечание: параметр comment используется для пользовательских комментариев к заказу."
 			},
 			"response": []
 		}
