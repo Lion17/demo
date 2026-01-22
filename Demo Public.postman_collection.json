@@ -32,7 +32,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"productId\": 1,\n  \"quantity\": 2\n}",
+					"raw": "{\n  \"productId\": 1,\n  \"quantity\": 4\n}",
 					"options": {
 						"raw": {
 							"language": "json"
