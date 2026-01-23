@@ -66,7 +66,6 @@
             }
           ],
           "cookie": [],
-          "responseTime": "2026-01-22T11:22:44.716Z",
           "body": "[\n    {\n        \"id\": 1,\n        \"status\": \"created\"\n    }\n]"
         }
       ]
@@ -149,7 +148,6 @@
             }
           ],
           "cookie": [],
-          "responseTime": "2026-01-22T11:22:56.758Z",
           "body": "{\n    \"id\": 1,\n    \"status\": \"created\"\n}"
         }
       ]
